@@ -18,11 +18,16 @@ function CounterApp() {
     console.log(counter);
 
     // Asking react to perform dom opr
+    // how to trigger the DOM Opr
     setCounter(counter);
   };
 
   return (
     <>
+      <h1>{counter}</h1>
+      <span>{counter}</span>
+      <div>{counter}</div>
+      <h1>{counter}</h1>
       <h1>{counter}</h1>
       <input type="button" value="Like Me" onClick={likeMeAction} />
     </>
