@@ -9,19 +9,15 @@ function App() {
   );
 }
 
-// UserDefineTag
 function CounterApp() {
-  // Data Member :: stateless/ stateful
-  // let counter = 1; // stateless
-  let [counter, setCounter] = useState(1); // to create stateful variable + this will help to perform dom operation.
+  // let counter = 100; // stateless
+  let [counter, setCounter] = useState(100); // stateful + DOM Opr
 
-  // Member Function
   let likeMeAction = () => {
     counter = counter + 1;
-    console.log("I m button click", counter);
+    console.log(counter);
 
-    // Asking REACT TO PERFOMR DOM OEPRATION
-    // Calling setCounter => DOM Operation
+    // Asking react to perform dom opr
     setCounter(counter);
   };
 
