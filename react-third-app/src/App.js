@@ -1,23 +1,37 @@
+// User Defined Tag: <App />
 function App() {
   return (
     <>
-      <h1>Counter App</h1>
-      <CounterApp />
+      <AppHeader />
+      <AppBody />
+      <AppFooter />
     </>
   );
 }
 
-// UserDefineTag
-function CounterApp() {
-  // Member Function
-  let likeMeAction = () => {
-    // alert();
-    console.log("I m button click");
-  };
-
+// User Defined Tag: <AppHeader />
+function AppHeader() {
   return (
     <>
-      <input type="button" value="Like Me" onClick={likeMeAction} />
+      <h1>Header</h1>
+    </>
+  );
+}
+
+// User Defined Tag: <AppBody />
+function AppBody() {
+  return (
+    <>
+      <h1>App Body</h1>
+    </>
+  );
+}
+
+// User Defined Tag: <AppFooter />
+function AppFooter() {
+  return (
+    <>
+      <h1>App Footer</h1>
     </>
   );
 }
