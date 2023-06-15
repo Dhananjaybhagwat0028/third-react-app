@@ -12,9 +12,11 @@ function App() {
 // User Defined Tag: <AppHeader />
 function AppHeader() {
   return (
-    <>
-      <h1>Header</h1>
-    </>
+    <div className="row bg-success text-light p-3 fs-1">
+      <div className="col">Home</div>
+      <div className="col">Project</div>
+      <div className="col">AboutUs</div>
+    </div>
   );
 }
 
@@ -22,7 +24,20 @@ function AppHeader() {
 function AppBody() {
   return (
     <>
-      <h1>App Body</h1>
+      <div className="alert alert-success fs-3 mb-0">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        rem corrupti ipsam, necessitatibus, ut tempore nisi aspernatur cumque
+        blanditiis quae quia. Corrupti, in ducimus. Ullam suscipit inventore
+        quam ex non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus tempora eum cupiditate. Nobis id, facere iure debitis eum a
+        at, nulla placeat, tenetur tempore ratione adipisci deleniti alias
+        aspernatur voluptatem! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Perspiciatis rem corrupti ipsam, necessitatibus, ut
+        tempore nisi aspernatur cumque blanditiis quae quia. Corrupti, in
+        ducimus. Ullam suscipit inventore quam ex non. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Voluptatibus tempora eum cupiditate.
+        Nobis id, facere iure debitis eum a at, nulla placeat, tenetur 
+      </div>
     </>
   );
 }
@@ -31,7 +46,11 @@ function AppBody() {
 function AppFooter() {
   return (
     <>
-      <h1>App Footer</h1>
+      <div
+        className="bg-dark text-light fs-1 d-flex justify-content-center align-items-center"
+        style={{ height: "200px" }}>
+        Lorem ipsum dolor sit amet.
+      </div>
     </>
   );
 }
