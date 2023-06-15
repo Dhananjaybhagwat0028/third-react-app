@@ -34,7 +34,8 @@ function CounterApp() {
         Cumque quod dolorem cupiditate quidem corrupti!
       </h5>
       <h5>
-        {counter} <input type="button" value="Like Me" onClick={likeMeAction} />
+        {counter}{" "}
+        <input type="button" value="&#128077;" onClick={likeMeAction} />
       </h5>
     </>
   );
