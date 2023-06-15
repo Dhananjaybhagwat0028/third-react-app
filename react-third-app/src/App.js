@@ -5,6 +5,9 @@ function App() {
     <>
       <h1>Counter App</h1>
       <CounterApp />
+      <CounterApp />
+      <CounterApp />
+      <CounterApp />
     </>
   );
 }
@@ -24,12 +27,15 @@ function CounterApp() {
 
   return (
     <>
-      <h1>{counter}</h1>
-      <span>{counter}</span>
-      <div>{counter}</div>
-      <h1>{counter}</h1>
-      <h1>{counter}</h1>
-      <input type="button" value="Like Me" onClick={likeMeAction} />
+      <h5>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        commodi reiciendis ullam aliquam facilis perferendis accusamus
+        voluptatum eligendi, eaque voluptatem corrupti, dicta nesciunt voluptas.
+        Cumque quod dolorem cupiditate quidem corrupti!
+      </h5>
+      <h5>
+        {counter} <input type="button" value="Like Me" onClick={likeMeAction} />
+      </h5>
     </>
   );
 }
